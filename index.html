@@ -1,1 +1,585 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Lila — salon za nokte na Vračaru</title>
+  <meta name="description" content="Studio Lila je demo sajt salona za nokte na Vračaru: manikir, gel lak, izlivanje, nadogradnja, pedikir i njega ruku. Cene i utisci su primer.">
+  <meta name="theme-color" content="#FBF6F5">
+  <link rel="canonical" href="https://webglowstudio.github.io/Salonzanokte/">
+  <meta property="og:title" content="Studio Lila — salon za nokte na Vračaru">
+  <meta property="og:description" content="Demo sajt salona za nokte. Manikir, gel lak, izlivanje i pedikir, u mirnom tonu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webglowstudio.github.io/Salonzanokte/">
+  <meta property="og:locale" content="sr_RS">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://images.pexels.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
 
+  <header class="site-header" id="vrh">
+    <div class="header-inner">
+      <a class="logo" href="#vrh">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#6B3A4E"/>
+          <path d="M16 3.8c.8 0 1.5.7 2.5 2.6 1.3 2.4 2.8 5.6 3.3 8.6.4 2.2.5 4.2.5 5.6 0 3.7-2.6 6.4-6.3 6.4s-6.3-2.7-6.3-6.4c0-1.4.1-3.4.5-5.6.5-3 2-6.2 3.3-8.6C14.5 4.5 15.2 3.8 16 3.8z" fill="#F6E8E6"/>
+          <path d="M11.6 21.4c1 2.3 2.5 3.6 4.4 3.6s3.4-1.3 4.4-3.6c-1.3.9-2.8 1.4-4.4 1.4s-3.1-.5-4.4-1.4z" fill="#C6A56A"/>
+        </svg>
+        <span class="logo-word">Studio <em>Lila</em></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="glavni-meni">
+        <span class="sr-only">Otvori meni</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="glavni-meni" aria-label="Glavni meni">
+        <ul>
+          <li><a href="#usluge">Usluge</a></li>
+          <li><a href="#cenovnik">Cenovnik</a></li>
+          <li><a href="#nijanse">Nijanse</a></li>
+          <li><a href="#galerija">Galerija</a></li>
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#utisci">Utisci</a></li>
+          <li><a href="#lokacija">Lokacija</a></li>
+        </ul>
+        <a class="btn btn-solid nav-cta" href="#termin">Zakaži termin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+    <section class="hero" aria-labelledby="hero-naslov">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Salon za nokte · Vračar</p>
+          <h1 id="hero-naslov">Najlepša njega počinje od noktiju</h1>
+          <p class="lead">U Studiju Lila radimo jednu po jednu. Manikir, gel lak, izlivanje i pedikir — vi birate nijansu, mi ostavljamo vreme da sve legne kako treba.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#termin">Zakaži termin</a>
+            <a class="btn btn-ghost" href="#usluge">Pogledajte usluge</a>
+          </div>
+          <p class="hero-note">Miran termin, bez žurbe i bez drugog klijenta u isto vreme.</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="halo"></div>
+          <div class="bottle">
+            <div class="bottle-cap"></div>
+            <div class="bottle-neck"></div>
+            <div class="bottle-glass">
+              <div class="bottle-liquid"></div>
+              <div class="bottle-shine"></div>
+              <span class="bottle-label">Lila</span>
+            </div>
+          </div>
+          <ul class="float-swatches">
+            <li style="--swatch:#E8C9C3"></li>
+            <li style="--swatch:#D9A6AE"></li>
+            <li style="--swatch:#C9A6BE"></li>
+            <li style="--swatch:#D9C7A4"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="usluge" aria-labelledby="usluge-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Šta radimo</p>
+          <h2 id="usluge-naslov">Usluge</h2>
+          <p>Svaka usluga ima svoje vreme. Ako niste sigurni šta vam treba, pitajte nas — rado ćemo predložiti nešto mirnije za nokat koji je umoran.</p>
+        </div>
+        <ul class="service-list">
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Manikir</h3>
+                <p class="duration">45 min</p>
+              </div>
+              <p>Oblik, uredna kožica i nega ploče. Lak po želji ili samo sjaj, ako volite prirodan nokat.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Gel lak</h3>
+                <p class="duration">75 min</p>
+              </div>
+              <p>Boja koja ostaje uredna dve do tri nedelje. Kada dolazite kod nas, skidanje prethodnog gela ulazi u termin.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Izlivanje noktiju</h3>
+                <p class="duration">90 min</p>
+              </div>
+              <p>Ojačanje prirodnog nokta gelom, kada želite čvrstinu i blagu dužinu bez nadogradnje.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Nadogradnja</h3>
+                <p class="duration">120 min</p>
+              </div>
+              <p>Na tipsama ili šablonu. Oblik dogovaramo zajedno: badem, oval ili kratki, miran kvadrat.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Pedikir</h3>
+                <p class="duration">60 min</p>
+              </div>
+              <p>Estetski pedikir: nega stopala, obrada noktiju i lak. Bez aparata, u svom tempu.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Nail art</h3>
+                <p class="duration">30–45 min</p>
+              </div>
+              <p>Francuski, tanka linija ili jedan naglašeni nokat. Radi se uz manikir ili gel lak.</p>
+            </article>
+          </li>
+          <li>
+            <article class="service">
+              <div class="service-top">
+                <h3>Njega ruku</h3>
+                <p class="duration">40 min</p>
+              </div>
+              <p>Piling, maska i krema. Može uz manikir ili kao poseban, kraći dolazak.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-blush" id="cenovnik" aria-labelledby="cenovnik-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="example-flag">Cene su primer</p>
+          <h2 id="cenovnik-naslov">Cenovnik</h2>
+          <p>Iznosi su izmišljeni. Ovde su da vidite kako cenovnik može da stoji na sajtu, a ne kao ponuda pravog salona.</p>
+        </div>
+        <div class="price-card">
+          <ul class="price-list">
+            <li>
+              <div>
+                <h3>Manikir</h3>
+                <p>45 min</p>
+              </div>
+              <p class="price"><span>2.200</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Gel lak</h3>
+                <p>75 min</p>
+              </div>
+              <p class="price"><span>2.900</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Izlivanje noktiju</h3>
+                <p>90 min</p>
+              </div>
+              <p class="price"><span>4.200</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Nadogradnja</h3>
+                <p>120 min</p>
+              </div>
+              <p class="price"><span>5.400</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Pedikir</h3>
+                <p>60 min</p>
+              </div>
+              <p class="price"><span>3.200</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Nail art</h3>
+                <p>30–45 min</p>
+              </div>
+              <p class="price"><span>od 700</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+            <li>
+              <div>
+                <h3>Njega ruku</h3>
+                <p>40 min</p>
+              </div>
+              <p class="price"><span>1.800</span> <abbr title="srpski dinar">RSD</abbr></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nijanse" aria-labelledby="nijanse-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Proba boje</p>
+          <h2 id="nijanse-naslov">Izaberite nijansu</h2>
+          <p>Dodirnite boju i pogledajte je na noktu. Ovo je samo proba na ekranu — u salonu nijansu gledamo pri dnevnoj svetlosti.</p>
+        </div>
+        <div class="picker">
+          <div class="hand" id="hand" style="--polish:#E8C9C3">
+            <div class="finger f1"><span class="nail"></span></div>
+            <div class="finger f2"><span class="nail"></span></div>
+            <div class="finger f3"><span class="nail"></span></div>
+            <div class="finger f4"><span class="nail"></span></div>
+            <div class="finger f5"><span class="nail"></span></div>
+          </div>
+          <div class="picker-panel">
+            <fieldset>
+              <legend>Dodirnite nijansu</legend>
+              <div class="swatches" role="presentation">
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Puder" data-color="#E8C9C3" checked>
+                  <span class="dot" style="background:#E8C9C3"></span>
+                  <span class="swatch-name">Puder</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Ruža" data-color="#D9A6AE">
+                  <span class="dot" style="background:#D9A6AE"></span>
+                  <span class="swatch-name">Ruža</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Lila" data-color="#C9A6BE">
+                  <span class="dot" style="background:#C9A6BE"></span>
+                  <span class="swatch-name">Lila</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Orhideja" data-color="#B07B95">
+                  <span class="dot" style="background:#B07B95"></span>
+                  <span class="swatch-name">Orhideja</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Šljiva" data-color="#7A4560">
+                  <span class="dot" style="background:#7A4560"></span>
+                  <span class="swatch-name">Šljiva</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Malina" data-color="#A85D70">
+                  <span class="dot" style="background:#A85D70"></span>
+                  <span class="swatch-name">Malina</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Šampanjac" data-color="#D9C7A4">
+                  <span class="dot" style="background:#D9C7A4"></span>
+                  <span class="swatch-name">Šampanjac</span>
+                </label>
+                <label class="swatch">
+                  <input type="radio" name="nijansa" value="Biser" data-color="#F4E4E1">
+                  <span class="dot" style="background:#F4E4E1"></span>
+                  <span class="swatch-name">Biser</span>
+                </label>
+              </div>
+            </fieldset>
+            <p class="chosen" id="chosen" aria-live="polite">Izabrana nijansa: Puder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blush" id="galerija" aria-labelledby="galerija-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Za raspoloženje</p>
+          <h2 id="galerija-naslov">Inspiracija</h2>
+          <p>Fotografije su besplatne stock slike sa Unsplash-a i Pexels-a. Služe kao primer izgleda sajta, a ne kao radovi Studija Lila.</p>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+              srcset="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w, https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w"
+              sizes="(min-width: 900px) 38vw, 100vw"
+              width="900"
+              height="1120"
+              alt="Krupan kadar ruku sa svetloružičastim lakom, na beloj mekoj podlozi">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+              srcset="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w, https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w"
+              sizes="(min-width: 900px) 28vw, 50vw"
+              width="900"
+              height="900"
+              alt="Šaka u belom džemperu, nokti u lila, beloj i svetlucavoj nijansi"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
+              srcset="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200 1200w"
+              sizes="(min-width: 900px) 28vw, 50vw"
+              width="900"
+              height="1200"
+              alt="Ruka bira nijansu na lepezi, pored uzoraka puder laka"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Stock · Pexels</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
+              srcset="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&amp;fit=crop&amp;w=600&amp;q=70 600w, https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w"
+              sizes="(min-width: 900px) 28vw, 50vw"
+              width="900"
+              height="600"
+              alt="Manikir u toku: tehničarka radi na noktima klijentkinje"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Stock · Unsplash</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3997380/pexels-photo-3997380.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
+              srcset="https://images.pexels.com/photos/3997380/pexels-photo-3997380.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/3997380/pexels-photo-3997380.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200 1200w"
+              sizes="(min-width: 900px) 28vw, 50vw"
+              width="900"
+              height="1200"
+              alt="Nude manikir pored lepeze boja i lampe za nokte"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Stock · Pexels</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
+              srcset="https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600 600w, https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200 1200w"
+              sizes="(min-width: 900px) 28vw, 50vw"
+              width="900"
+              height="1200"
+              alt="Šaka sa svetlim lakom i jednim naglašenim crvenim noktom"
+              loading="lazy"
+              decoding="async">
+            <figcaption>Stock · Pexels</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="o-nama" aria-labelledby="o-nama-naslov">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">Mali salon</p>
+          <h2 id="o-nama-naslov">O nama</h2>
+          <p>Studio Lila je zamišljen kao miran kutak na Vračaru. Jedna stolica, dnevna svetlost i dovoljno vremena da se kožica ne dira na brzinu.</p>
+          <p>Volimo kratke, uredne nokte isto koliko i pažljivu nadogradnju. Ako prvi put radite gel, objasnićemo kako da ga čuvate i kada ima smisla doći na korekciju.</p>
+          <p>Ovaj salon je izmišljen. Stranica je primer sajta, da vlasnice salona vide ton, raspored i formu za termine.</p>
+        </div>
+        <ul class="about-points">
+          <li>
+            <strong>Jedna po jedna</strong>
+            <span>Termin je samo vaš. Nema čekanja pored tuđeg razgovora.</span>
+          </li>
+          <li>
+            <strong>Nega pre dužine</strong>
+            <span>Ako je nokat tanak, prvo ga učvrstimo, pa tek onda biramo oblik.</span>
+          </li>
+          <li>
+            <strong>Vračar</strong>
+            <span>Tiha ulica, lako se staje. Adresa ispod je izmišljena.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-blush" id="utisci" aria-labelledby="utisci-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="example-flag">Primer utisaka</p>
+          <h2 id="utisci-naslov">Utisci</h2>
+          <p>Rečenice ispod su izmišljene. Pokazuju kako utisci mogu da izgledaju, a nisu iskustva pravih klijentkinja.</p>
+        </div>
+        <ul class="reviews">
+          <li>
+            <blockquote>
+              <p>Došla sam sa oštećenim noktima posle skidanja gela. Sredili su ih kratko i uredno, bez nagovaranja na nadogradnju.</p>
+              <footer>Milica, Vračar</footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>Gel lak mi je ostao uredan pune tri nedelje, bez podizanja na vrhovima. Termin je počeo tačno kada je rečeno.</p>
+              <footer>Jelena, Neimar</footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>Pedikir i njega ruku u istom dolasku. Mirno, čisto i bez žurbe. Vratila bih se po nijansu lila.</p>
+              <footer>Sofija, Čubura</footer>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="lokacija" aria-labelledby="lokacija-naslov">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Kada i gde</p>
+          <h2 id="lokacija-naslov">Radno vreme i lokacija</h2>
+          <p>Adresa i broj su izmišljeni i služe kao primer. Niko vas ne čeka na ovoj lokaciji.</p>
+        </div>
+        <div class="visit-grid">
+          <article class="visit-card">
+            <h3>Radno vreme</h3>
+            <dl class="hours">
+              <div>
+                <dt>Ponedeljak – petak</dt>
+                <dd>09:00 – 20:00</dd>
+              </div>
+              <div>
+                <dt>Subota</dt>
+                <dd>10:00 – 17:00</dd>
+              </div>
+              <div>
+                <dt>Nedelja</dt>
+                <dd>Ne radimo</dd>
+              </div>
+            </dl>
+            <h3 class="visit-sub">Lokacija</h3>
+            <address>
+              Studio Lila<br>
+              Kneginje Zorke 15<br>
+              Vračar, Beograd
+            </address>
+            <p class="fine">Broj je izmišljen: 011 404 21 86</p>
+          </article>
+          <article class="visit-card map-card">
+            <h3>Mapa</h3>
+            <div class="map" aria-hidden="true">
+              <span class="street street-h"></span>
+              <span class="street street-v"></span>
+              <span class="street street-a"></span>
+              <span class="park"></span>
+              <span class="pin">
+                <span class="pin-head"></span>
+                Studio Lila
+              </span>
+            </div>
+            <p class="fine">Ilustracija, nije prava mapa. Kneginje Zorke, Vračar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blush" id="termin" aria-labelledby="termin-naslov">
+      <div class="wrap booking-grid">
+        <div>
+          <p class="eyebrow">Termin</p>
+          <h2 id="termin-naslov">Zakažite termin</h2>
+          <p>Popunite formu i videćete kako izgleda potvrda. Ovo je demo: poruka se ne šalje i niko je ne prima.</p>
+          <ul class="booking-hints">
+            <li>Nedeljom ne radimo.</li>
+            <li>Javićemo se samo u pravom salonu, da potvrdimo vreme.</li>
+            <li>Ako kasnite više od 15 minuta, termin se skraćuje.</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <form id="booking-form" novalidate>
+            <div class="fields">
+              <div class="field">
+                <label for="ime">Ime i prezime</label>
+                <input id="ime" name="ime" type="text" autocomplete="name" required aria-describedby="err-ime">
+                <p class="field-error" id="err-ime" hidden></p>
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon</label>
+                <input id="telefon" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="err-telefon" placeholder="06x xxx xx xx">
+                <p class="field-error" id="err-telefon" hidden></p>
+              </div>
+              <div class="field field-wide">
+                <label for="usluga">Usluga</label>
+                <select id="usluga" name="usluga" required aria-describedby="err-usluga">
+                  <option value="">Izaberite uslugu</option>
+                  <option>Manikir</option>
+                  <option>Gel lak</option>
+                  <option>Izlivanje noktiju</option>
+                  <option>Nadogradnja</option>
+                  <option>Pedikir</option>
+                  <option>Nail art</option>
+                  <option>Njega ruku</option>
+                </select>
+                <p class="field-error" id="err-usluga" hidden></p>
+              </div>
+              <div class="field">
+                <label for="datum">Datum</label>
+                <input id="datum" name="datum" type="date" required aria-describedby="err-datum">
+                <p class="field-error" id="err-datum" hidden></p>
+              </div>
+              <div class="field">
+                <label for="vreme">Vreme</label>
+                <select id="vreme" name="vreme" required aria-describedby="err-vreme">
+                  <option value="">Izaberite vreme</option>
+                  <option>09:00</option>
+                  <option>09:30</option>
+                  <option>10:00</option>
+                  <option>10:30</option>
+                  <option>11:00</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+                  <option>12:30</option>
+                  <option>13:00</option>
+                  <option>13:30</option>
+                  <option>14:00</option>
+                  <option>14:30</option>
+                  <option>15:00</option>
+                  <option>15:30</option>
+                  <option>16:00</option>
+                  <option>16:30</option>
+                  <option>17:00</option>
+                  <option>17:30</option>
+                  <option>18:00</option>
+                  <option>18:30</option>
+                  <option>19:00</option>
+                  <option>19:30</option>
+                </select>
+                <p class="field-error" id="err-vreme" hidden></p>
+              </div>
+            </div>
+            <button class="btn btn-solid btn-block" type="submit">Zakaži termin</button>
+            <p class="form-disclaimer">Forma je samo za prikaz. Ništa se ne šalje.</p>
+          </form>
+          <div class="confirm" id="confirm" hidden role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">Studio <em>Lila</em></p>
+        <p>Salon za nokte, Vračar. Izmišljen primer.</p>
+      </div>
+      <p class="footer-demo">Demo sajt: WebGlow Studio</p>
+      <ul class="footer-links">
+        <li><a href="#usluge">Usluge</a></li>
+        <li><a href="#cenovnik">Cenovnik</a></li>
+        <li><a href="#termin">Zakaži termin</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
